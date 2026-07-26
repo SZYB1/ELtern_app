@@ -9,11 +9,16 @@ package.name = elternapp
 # (str) Package domain (needed for android packaging)
 package.domain = org.eltern
 
+# (str) Source code where the main.py live
+source.dir = .
+
 # (list) Source files to include (let it include all files by default)
 source.include_exts = py,png,jpg,kv,atlas
 
+# (str) Application versioning
+version = 0.1
+
 # (list) Application requirements
-# Trage hier deine Bibliotheken ein, z.B. kivy (oder was deine eltern_app_android.py braucht)
 requirements = python3,kivy
 
 # (str) Supported orientation (landscape, portrait or all)
@@ -24,4 +29,3 @@ android.permissions = INTERNET
 
 [buildozer]
 log_level = 2
-warn_on_root = 1
